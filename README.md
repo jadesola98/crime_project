@@ -6,7 +6,7 @@ This project is designed to pull data of reported crime incidents in Chicago fro
 
 # Tools
 
-## 1.Sodapy
+### 1.Sodapy
 Sodapy is the official python api for socrata
 
 ## 2.Airbyte
