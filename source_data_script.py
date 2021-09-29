@@ -14,9 +14,9 @@ results = client.get("ijzp-q8t2", limit=5000)
 
 df = pd.DataFrame.from_records(results)
 
-#print(df)
+print(df)
 
-
+#migrate from dataframe to database
 from sqlalchemy import create_engine
 engine = create_engine('postgresql://mxzqmels:KY3Gj6B6yFPH1H4eSlmPtmpdwo6SJaJK@chunee.db.elephantsql.com:5432/mxzqmels')
 df.to_sql('city_source_data', engine)
