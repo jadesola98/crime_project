@@ -1,10 +1,11 @@
 import pandas as pd
 from sodapy import Socrata
+from config import my_credentials
 
 client = Socrata("data.cityofchicago.org",
                  "9GI35TGzZVKetBnn5VRnZiUax",
-                 username="alayandeay@gmail.com",
-                password="UpcwPk$s3W5@acG")
+                 username=username,
+                password=password)
 
 #print(client)
 results = client.get("ijzp-q8t2", limit=5000)
