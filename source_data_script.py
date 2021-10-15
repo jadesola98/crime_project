@@ -8,7 +8,7 @@ client = Socrata("data.cityofchicago.org",
                 config.password)
 
 #print(client)
-results = client.get("ijzp-q8t2", limit=5000)
+results = client.get("ijzp-q8t2")
 
 #print(type(results))
 #print(results)
