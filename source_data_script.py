@@ -8,6 +8,8 @@ client = Socrata("data.cityofchicago.org",
                 config.password)
 
 #print(client)
+
+#results = client.get("ijzp-q8t2", limit=50000)
 results = client.get("ijzp-q8t2")
 
 #print(type(results))
@@ -16,6 +18,9 @@ results = client.get("ijzp-q8t2")
 df = pd.DataFrame.from_records(results)
 
 print(df)
+
+#print(df['date'].min())
+#print(df['date'].max())
 
 #migrate from dataframe to database
 from sqlalchemy import create_engine

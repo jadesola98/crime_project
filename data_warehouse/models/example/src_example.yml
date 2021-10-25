@@ -1,0 +1,10 @@
+version: 2
+
+
+sources:
+  - name: public
+    description: My produciton source data
+    schema: public
+
+    tables:
+     - name: city_source_data
